@@ -10,6 +10,18 @@ docker-compose build
 docker-compose up -d --force-recreate --remove-orphans
 ```
 
+# Test locally #
+
+```
+http://localhost
+```
+
+# Host via AWS S3 #
+
+```
+http://osps-scratch.s3-website-ap-southeast-2.amazonaws.com/
+```
+
 # Logs #
 
 ```
