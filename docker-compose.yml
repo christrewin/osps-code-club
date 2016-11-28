@@ -1,0 +1,25 @@
+version: "2"
+
+volumes:
+  webapp_cfg:
+    driver: local
+
+services:
+
+  webapp:
+    build: ./webapp
+    container_name: osps-webapp
+    volumes:
+      - ./webapp/app/:/usr/share/nginx/html/
+    ports:
+      - "80:80"
+    # links:
+    #   - redis
+    #   - mysql
+    #   - mongodb
+    # depends_on:
+    #   - redis
+    #   - mysql
+    #   - mongodb
+    hostname: osps-webapp
+    tty: true

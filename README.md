@@ -1,29 +1,29 @@
-# README #
+# Build #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+```
+docker-compose build
+```
 
-### What is this repository for? ###
+# Run #
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+```
+docker-compose up -d --force-recreate --remove-orphans
+```
 
-### How do I get set up? ###
+# Logs #
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+```
+docker-compose logs -f
+```
 
-### Contribution guidelines ###
+# Processes #
 
-* Writing tests
-* Code review
-* Other guidelines
+```
+docker-compose ps
+```
 
-### Who do I talk to? ###
+# Shutdown #
 
-* Repo owner or admin
-* Other community or team contact
+```
+docker-compose down
+```
